@@ -1,5 +1,7 @@
-//char * AUTHOR_NAME = (char *) "Jakub Pach";
-//char * AUTHOR_AUTHORSHIP = (char *) "I acknowledge that I have worked on this assignment independently, except where explicitly noted and referenced. Any collaboration or use of external resources has been properly cited. I am fully aware of the consequences of academic dishonesty and agree to abide by the university's academic integrity policy. I understand the seriousness and implications of plagiarism.";
+// Ty Gonder
+// CSCI 232 Fall 2026
+// Programming Assignment #2
+// I declare that I am the author of this work, take full responsibility for it, and have disclosed any material external assistance.
 
 
 // --------- FUNCTION IMPLEMENTATIONS ------------
@@ -60,7 +62,7 @@ int challenge01()
 
     // int z = x * y + 2;
 
-    return 0;
+    return 23;
 }
 
 
@@ -95,7 +97,7 @@ int challenge02()
     // x -= 5;
     // x *= 2;
 
-    return 0;
+    return 14;
 }
 
 
@@ -132,7 +134,7 @@ int challenge03()
     // y = x - y;
     // x = x - y;
 
-    return 0;
+    return 10;
 }
 
 
@@ -166,7 +168,7 @@ int challenge04()
 
     // value += 5;
 
-    return 0;
+    return 30;
 }
 
 
@@ -209,7 +211,7 @@ int challenge05()
         // x += 5;
     }
 
-    return 0;
+    return 45;
 }
 
 
@@ -248,7 +250,7 @@ int challenge06()
     // int result1 = a / b;
     // double result2 = (double)(a) / b;
 
-    return 0;
+    return 33.5;
 }
 
 
@@ -295,7 +297,7 @@ int challenge07()
     // int *y = &x;
     // *y = 4;
 
-    return 0;
+    return 4;
 }
 
 
@@ -343,7 +345,7 @@ int challenge08()
     // int *p = values;
     // int result = *(p + 3);
 
-    return 0;
+    return 40;
 }
 
 
@@ -387,10 +389,10 @@ int challenge09()
 {
     int values[] = {11, 22, 33, 44};
 
-    // int *p = values;
-    // int *q = p + 2;
+    int *p = values;
+    int *q = p + 2;
 
-    return 0;
+    return 33;
 }
 
 
@@ -443,7 +445,7 @@ int challenge10()
     // int **pp = &p;
     // **pp = 42;
 
-    return 0;
+    return 42;
 }
 
 
@@ -488,7 +490,7 @@ int challenge11()
 
     // int result = add(x, 5);
 
-    return 0;
+    return 12;
 }
 
 
@@ -539,7 +541,7 @@ int challenge12()
 {
     // int result = calculate(4);
 
-    return 0;
+    return 18;
 }
 
 
@@ -595,7 +597,7 @@ int challenge13()
 {
     // int result = mystery(4);
 
-    return 0;
+    return 2;
 }
 
 
@@ -655,8 +657,8 @@ int transformData(int *p, int n)
     if (n == 0)
         return *p;
 
-    // int value = *(p + n);
-    // return transformData(p, n - 1) + value;
+    int value = *(p + n);
+    return transformData(p, n - 1) + value;
 
     return 0;
 }
@@ -665,7 +667,8 @@ int challenge14()
 {
     int data[] = {4, 7, 2, 9};
 
-    // int result = transformData(data, 3);
+    int result = transformData(data, 3);
 
-    return 0;
+    return 22;
 }
+
