@@ -3,7 +3,6 @@
 // Programming Assignment #2
 // I declare that I am the author of this work, take full responsibility for it, and have disclosed any material external assistance.
 
-
 // --------- FUNCTION IMPLEMENTATIONS ------------
 #include <stdio.h>
 //#include <cstdint>
@@ -657,8 +656,8 @@ int transformData(int *p, int n)
     if (n == 0)
         return *p;
 
-    int value = *(p + n);
-    return transformData(p, n - 1) + value;
+    // int value = *(p + n);
+    // return transformData(p, n - 1) + value;
 
     return 0;
 }
@@ -667,8 +666,7 @@ int challenge14()
 {
     int data[] = {4, 7, 2, 9};
 
-    int result = transformData(data, 3);
+    // int result = transformData(data, 3);
 
     return 22;
 }
-
